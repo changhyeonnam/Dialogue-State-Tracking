@@ -88,7 +88,7 @@ roberta-base의 경우, epcoh 30을 넘어 epoch 50이상에서도 validation se
 
 |  | Joint_acc | Slot_acc | Slot_f1 | learnig rate | batch_size | epoch |
 | --- | --- | --- | --- | --- | --- | --- |
-| RobertaTrade( roberta-base - LSTM) | 0.6978 | 0.9899 | 0.9558 | 5e-5 | 16 | 100 |
+| RobertaTrade( roberta-base - LSTM) | 0.7048 | 0.9899 | 0.9555 | 5e-5 | 16 | 100 |
 
 ## Future Work
 
