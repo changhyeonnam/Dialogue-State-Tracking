@@ -45,11 +45,6 @@ def inference(model, eval_loader, processor, device):
 
 if __name__ == "__main__":
 
-    # args.data_dir = os.environ['SM_CHANNEL_EVAL']
-    # args.model_dir = os.environ['SM_CHANNEL_MODEL']
-    # args.output_dir = os.environ['SM_OUTPUT_DATA_DIR']
-    
-    # model_dir_path = os.path.dirname(args.model_dir)
     eval_data = json.load(open(f"data/eval_dataset/eval_dials.json", "r"))
     config = json.load(open(f"results/exp_config.json", "r"))
     config = argparse.Namespace(**config)
@@ -97,10 +92,7 @@ if __name__ == "__main__":
     print("Model is loaded")
 
     predictions = inference(model, eval_loader, processor, device)
-    
-    # if not os.path.exists(args.output_dir):
-    #     os.mkdir(args.output_dir)
-    
+
     json.dump(
         predictions,
         open(f"predictions.csv", "w"),

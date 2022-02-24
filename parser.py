@@ -3,15 +3,15 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--data_dir", type=str, default="data/train_dataset")
 parser.add_argument("--model_dir", type=str, default="results_use_mecab")
-parser.add_argument("--train_batch_size", type=int, default=16)
+parser.add_argument("-b","--train_batch_size", type=int, default=16)
 parser.add_argument("--eval_batch_size", type=int, default=32)
 parser.add_argument("--learning_rate", type=float, default=5e-5)
 parser.add_argument("--adam_epsilon", type=float, default=1e-8)
 parser.add_argument("--max_grad_norm", type=float, default=1.0)
-parser.add_argument("--num_train_epochs", type=int, default=30)
+parser.add_argument("-e","--num_train_epochs", type=int, default=30)
 parser.add_argument("--warmup_ratio", type=int, default=0.1)
 parser.add_argument("--random_seed", type=int, default=42)
-parser.add_argument('--mecab',type=str, default="True")
+parser.add_argument('--mecab',type=str, default="False")
 parser.add_argument(
     "--model_name_or_path",
     type=str,

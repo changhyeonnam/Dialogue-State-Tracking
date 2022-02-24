@@ -100,7 +100,7 @@ Encoder의 finetuing이 끝난 후, 다음 개발하고 있던 모델은  SOM DS
 .
 ├── README.md
 ├── data
-│   ├──SImple EDA.ipynb
+│   ├── Simple\ EDA.ipynb
 │   ├── eval_dataset
 │   │   ├── eval_dials.json
 │   │   ├── eval_dials.pkl
@@ -117,13 +117,15 @@ Encoder의 finetuing이 끝난 후, 다음 개발하고 있던 모델은  SOM DS
 ├── inference.py
 ├── model
 │   ├── Roberta_TRADE.py
-│   ├── TRADE.py
+│   └── TRADE.py
 ├── parser.py
 ├── preprocessor.py
-├── results_use_mecab
+├── results
 │   ├── exp_config.json
+│   ├── predictions.csv
 │   └── slot_meta.json
 └── train.py
+
 ```
 
 GPU sever에서 권한 문제로 인해, mecab package가 설치되지 않아 미리 mecab으로 tokenize한 object을 pkl로 저장하여 사용했습니다.
