@@ -2,7 +2,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--data_dir", type=str, default="data/train_dataset")
-parser.add_argument("--model_dir", type=str, default="results_use_mecab")
+parser.add_argument("--model_dir", type=str, default="results")
 parser.add_argument("-b","--train_batch_size", type=int, default=16)
 parser.add_argument("--eval_batch_size", type=int, default=32)
 parser.add_argument("--learning_rate", type=float, default=5e-5)
