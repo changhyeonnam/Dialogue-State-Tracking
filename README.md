@@ -1,8 +1,5 @@
 # README
 
-> 남창현, Upstage AI Engineer internship. Deep Learning coding test report
-> 
-
 ## Abstract
 
 Open Vocabulary DST model 중 하나인 TRADE가 BaseLine model로 주어졌다. Scalable한 Dialogue State model을 개발하기 위해선, predefined ontology를 사용하는 DST모델과 hybrid하는 방향 보다는 Open Vocabulary DST model만을 사용하는 방향으로 개발해야 한다고 생각했다. 해당 report에서는 TRADE의 Encoder에 pretrained model ‘klue/Roberta-base’를 이용해 fine tuning을 통한 성능 향상을 목적으로 개발과 실험을 진행했다. ‘Roberta-base’의 hidden state output에 대해 2개의 LSTM layer, 1개의 Linear Layer를 통과시켜 완성한 Encoder는 public test set 기준으로 기존의 Baseline model보다 Joint accuracy 0.2155 만큼 더 좋은 성능을 보였다. 이후 진행될 Future work 중 하나인 SOM-DST의 Encoder에 대해 해당 report에서 개발한 Encoder를 사용하면 보다 좋은 성능을 낼 수 있을거라 기대할 수 있다.  
